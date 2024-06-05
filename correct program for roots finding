@@ -1,0 +1,20 @@
+#include<math.h>
+int main() {
+    // Write C code here
+   float a,b,c;
+   scanf("%f%f%f",&a,&b,&c);
+   float d=b*b-4*a*c;//square for negative numbers are not possible
+   if(d<0)
+   {
+       printf("roots are imaginary");
+   }
+   else
+   {
+  float r1=(-b+sqrt(d))/(2*a);
+   float r2=(-b-sqrt(d))/(2*a);
+   printf("root1=%f\n",r1);
+   printf("root2=%f",r2);
+   }
+   return 0;
+}
+   
