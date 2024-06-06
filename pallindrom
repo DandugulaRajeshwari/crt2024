@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int n,d,r,t;
+    scanf("%d",&n);
+    t=n;
+    while(n>0)
+    {
+       d=n%10;
+       n=n/10;
+       r=r*10+d;
+    }
+    if(r==t)
+       printf("pallindrom");
+    else
+    printf("Not a pallindrom");
+    return 0;
+}
